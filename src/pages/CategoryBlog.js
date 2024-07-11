@@ -26,7 +26,7 @@ const CategoryBlog = ({ setActive }) => {
   useEffect(() => {
     getCategoryBlogs();
     setActive(null);
-  }, []);
+  }, [getCategoryBlogs, setActive]);
 
   if (loading) {
     return <Spinner />;
